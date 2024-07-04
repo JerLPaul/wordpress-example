@@ -10,7 +10,7 @@ services:
     sizeGB: 20
   envVars:
  # PostgreSQL service
-- key: DATABASE_USER
+- key: dpg-cq2ois56l47c73bb017g-a
   fromDatabase:
     name: postgresql-db
     property: connectionString
@@ -18,7 +18,7 @@ services:
     
 - databases:
   # A Pro database instance with a read replica
-  - name: postgresql-db # Required
+  - name: dpg-cq2ois56l47c73bb017g-a # Required
     postgresMajorVersion: "16" # Default: most recent supported version
     region: ohio # Default: oregon
     plan: free # Default: starter
