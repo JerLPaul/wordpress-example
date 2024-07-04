@@ -10,9 +10,9 @@ services:
     sizeGB: 20
   envVars:
  # PostgreSQL service
-- key: dpg-cq2ois56l47c73bb017g-a
+- key: DB_STRING
   fromDatabase:
-    name: postgresql-db
+    name: dpg-cq2ois56l47c73bb017g-a
     property: connectionString
 
     
